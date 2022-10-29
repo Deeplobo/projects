@@ -25,7 +25,80 @@
       }
     </style>
   </head>
-  <body>
-    <h1 class="text-green-700">deep chowdhury</h1>
+  <body class="h-screen">
+    <!-- nav bar -->
+    <nav class="h-24 glass fixed w-full">
+      <!-- Desktop nav container -->
+      <div class="flex items-center justify-evenly h-full">
+        <!-- logo section  -->
+        <div class="w-1/2">
+          <img class="sm:pl-44 pl-5" src="images/logo-bookmark.svg" alt="" />
+        </div>
+        <!-- logo section End -->
+        <!-- nav links -->
+        <div class="w-1/2">
+          <ul
+            class="hidden sm:flex items-center justify-evenly pr-[11%] [&>li]:font-medium [&>li]:tracking-widest text-gray-500 text-[14px]"
+          >
+            <li>FEATURE</li>
+            <li>PRICING</li>
+            <li>CONTACT</li>
+            <li class="btn">LOGIN</li>
+          </ul>
+          <img
+            class="sm:hidden pl-[80%]"
+            src="images/icon-hamburger.svg"
+            alt=""
+          />
+        </div>
+        <!-- nav links End -->
+      </div>
+      <!-- mobile nav container -->
+      <div
+        class="sm:hidden fixed top-0 right-0 overflow-hidden z-10 bg-white h-screen w-0"
+      >
+        <img class="sm:hidden py-4" src="images/icon-hamburger.svg" alt="" />
+        <ul class="[&>li]:pl-2 [&>li]:pr-8 [&>li]:pt-4">
+          <li>FEATURE</li>
+          <li>PRICING</li>
+          <li>CONTACT</li>
+          <li class="">LOGIN</li>
+        </ul>
+      </div>
+      <!-- mobile nav container end -->
+    </nav>
+    <!-- nav bar End -->
+    <!-- hero section  -->
+    <section class="h-screen w-full grid place-items-center">
+      <!--  container  -->
+      <div class="w-full flex items-center justify-center ">
+        <!-- text container  -->
+        <div class="w-2/5 pl-16">
+          <!-- header text  -->
+          <h1 class="text-[2.5rem] font-semibold">A Simple Bookmark Manager</h1>
+          <!-- header text End -->
+          <!-- paragraph text  -->
+          <p class="text-[1.1rem] text-gray-600 py-4">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil
+            eaque, aut in hic consectetur tempora dolore suscipit accusantium
+          </p>
+          <!-- paragraph text End -->
+          <!-- buttons  -->
+          <div>
+            <button class="btn mr-6">get it on chrome</button>
+            <button class="btn">get it on firefox</button>
+          </div>
+          <!-- buttons End -->
+        </div>
+        <!-- text container  End-->
+        <div2 class="w-1/2">
+          <img src="images/illustration-hero.svg" alt="" />
+        </div>
+        <div class="absolute"></div>
+      </div>
+      <!--  container  End -->
+    </section>
+    <!-- hero section End -->
+    <section class="h-screen"></section>
   </body>
 </html>
