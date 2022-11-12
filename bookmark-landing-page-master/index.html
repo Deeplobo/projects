@@ -21,84 +21,175 @@
         text-align: center;
       }
       .attribution a {
-        color: hsl(228, 45%, 44%);
+        color: hsl(228, 46%, 43%);
       }
     </style>
   </head>
-  <body class="h-screen">
-    <!-- nav bar -->
-    <nav class="h-24 glass fixed w-full">
-      <!-- Desktop nav container -->
-      <div class="flex items-center justify-evenly h-full">
-        <!-- logo section  -->
-        <div class="w-1/2">
-          <img class="sm:pl-44 pl-5" src="images/logo-bookmark.svg" alt="" />
-        </div>
-        <!-- logo section End -->
-        <!-- nav links -->
-        <div class="w-1/2">
-          <ul
-            class="hidden sm:flex items-center justify-evenly pr-[11%] [&>li]:font-medium [&>li]:tracking-widest text-gray-500 text-[14px]"
-          >
-            <li>FEATURE</li>
-            <li>PRICING</li>
-            <li>CONTACT</li>
-            <li class="btn">LOGIN</li>
-          </ul>
-          <img
-            class="sm:hidden pl-[80%]"
-            src="images/icon-hamburger.svg"
-            alt=""
-          />
-        </div>
-        <!-- nav links End -->
-      </div>
-      <!-- mobile nav container -->
-      <div
-        class="sm:hidden fixed top-0 right-0 overflow-hidden z-10 bg-white h-screen w-0"
-      >
-        <img class="sm:hidden py-4" src="images/icon-hamburger.svg" alt="" />
-        <ul class="[&>li]:pl-2 [&>li]:pr-8 [&>li]:pt-4">
-          <li>FEATURE</li>
-          <li>PRICING</li>
-          <li>CONTACT</li>
-          <li class="">LOGIN</li>
-        </ul>
-      </div>
-      <!-- mobile nav container end -->
-    </nav>
-    <!-- nav bar End -->
-    <!-- hero section  -->
-    <section class="h-screen w-full grid place-items-center">
-      <!--  container  -->
-      <div class="w-full flex items-center justify-center ">
-        <!-- text container  -->
-        <div class="w-2/5 pl-16">
-          <!-- header text  -->
-          <h1 class="text-[2.5rem] font-semibold">A Simple Bookmark Manager</h1>
-          <!-- header text End -->
-          <!-- paragraph text  -->
-          <p class="text-[1.1rem] text-gray-600 py-4">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil
-            eaque, aut in hic consectetur tempora dolore suscipit accusantium
-          </p>
-          <!-- paragraph text End -->
-          <!-- buttons  -->
-          <div>
-            <button class="btn mr-6">get it on chrome</button>
-            <button class="btn">get it on firefox</button>
+  <body>
+    <!-- page  -->
+    <div class="h-screen w-auto">
+      <!-- nav bar -->
+      <nav class="h-24 glass fixed w-full">
+        <!-- Desktop nav container -->
+        <div class="flex items-center justify-evenly h-full">
+          <!-- logo section  -->
+          <div class="w-1/2">
+            <img class="sm:pl-44 pl-5" src="images/logo-bookmark.svg" alt="" />
           </div>
-          <!-- buttons End -->
+          <!-- logo section End -->
+          <!-- nav links -->
+          <div class="sm:w-1/2 w-40">
+            <ul
+              class="hidden sm:flex items-center justify-evenly pr-[11%] [&>li]:font-medium [&>li]:tracking-widest text-gray-500 text-[14px]"
+            >
+              <li><a class="hover:text-red-500" href="">FEATURE</a></li>
+              <li><a class="hover:text-red-500" href="">PRICING</a></li>
+              <li><a class="hover:text-red-500" href="">CONTACT</a></li>
+              <li class="btn-red btn-red-hover"><a href="">LOGIN</a></li>
+            </ul>
+            <img
+              class="sm:hidden pl-9"
+              src="images/icon-hamburger.svg"
+              alt=""
+            />
+          </div>
+          <!-- nav links End -->
         </div>
-        <!-- text container  End-->
-        <div2 class="w-1/2">
-          <img src="images/illustration-hero.svg" alt="" />
+        <!-- mobile nav container -->
+        <div
+          class="sm:hidden fixed top-0 right-0 overflow-hidden z-10 bg-white h-screen w-0"
+        >
+          <img class="sm:hidden py-4" src="images/icon-hamburger.svg" alt="" />
+          <ul class="[&>li]:pl-2 [&>li]:pr-8 [&>li]:pt-4">
+            <li><a href="">FEATURE</a></li>
+            <li><a href="">PRICING</a></li>
+            <li><a href="">CONTACT</a></li>
+            <li class="btn-red btn-red-hover">LOGIN</li>
+          </ul>
         </div>
-        <div class="absolute"></div>
-      </div>
-      <!--  container  End -->
-    </section>
-    <!-- hero section End -->
-    <section class="h-screen"></section>
+        <!-- mobile nav container end -->
+      </nav>
+      <!-- nav bar End -->
+      <!-- hero section  -->
+      <section class="h-screen sm:w-full w-full grid place-items-center pt-24">
+        <!--  container  -->
+        <div
+          class="sm:w-full flex flex-col-reverse sm:flex-row sm:items-center sm:justify-center"
+        >
+          <!-- text container  -->
+          <div class="sm:w-2/5 sm:pl-16 px-4 pt-7">
+            <!-- header text  -->
+            <h1 class="sm:text-5xl text-2xl font-semibold text-gray-800">
+              A Simple Bookmark Manager
+            </h1>
+            <!-- header text End -->
+            <!-- paragraph text  -->
+            <p class="sm:text-[1.1rem] text-sm text-gray-600 py-4">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil
+              eaque, aut in hic consectetur tempora dolore suscipit accusantium
+            </p>
+            <!-- paragraph text End -->
+            <!-- buttons  -->
+            <div class="flex sm:[&>*]:text-[16px] [&>*]:text-[11px]">
+              <button class="btn-blue btn-blue-hover mr-6">
+                get it on chrome
+              </button>
+              <button class="btn-blue btn-blue-hover">get it on firefox</button>
+            </div>
+            <!-- buttons End -->
+          </div>
+          <!-- text container  End-->
+          <div class="sm:w-1/2">
+            <img src="images/illustration-hero.svg" alt="" />
+          </div>
+          <div
+            class="absolute sm:-right-48 -right-24 sm:bottom-24 bottom-60 bg-[#5368df] sm:h-[45%] h-[30%] sm:w-1/2 w-[100%] rounded-full -z-10"
+          ></div>
+        </div>
+        <!--  container  End -->
+      </section>
+      <!-- hero section End -->
+      <section class="h-screen w-auto">
+        <!-- container  -->
+        <div class="pt-12">
+          <!-- header text  -->
+          <div class="text-center">
+            <h5 class="text-xl sm:text-4xl font-semibold text-gray-800 pb-3">
+              Features
+            </h5>
+            <p
+              class="text-sm sm:text-lg px-4 text-gray-700 sm:max-w-[35rem] sm:mx-auto"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+              optio id laudantium dolores nemo ducimus vitae, ipsam qui
+              molestiae rem
+            </p>
+          </div>
+          <!-- header text End -->
+          <!-- tab container  -->
+          <div>
+            <!-- tab links need more to think -->
+            <div
+              class="text-center p-5 [&>*]:py-4 sm:[&>*]:px-16 [&>*]:transition-all duration-200 sm:flex sm:justify-center sm:pt-16"
+            >
+              <h6
+                class="border-t-2 sm:border-t-0 hover:text-red-500 underl-red"
+              >
+                <a class="" href=""> Speedy Search </a>
+              </h6>
+              <h6 class="border-y-2 sm:border-y-0 hover:text-red-500">
+                <a href=""> Simple Bookmark</a>
+              </h6>
+              <h6 class="border-b-2 sm:border-b-0 hover:text-red-500">
+                <a href=""> Easy Sharing</a>
+              </h6>
+            </div>
+            <!-- tab links End -->
+            <!-- tab slides -->
+            <div class="relative md:flex md:items-center md:justify-evenly">
+              <!-- image box -->
+              <div class="px-6 py-8">
+                <img
+                  src="images/illustration-features-tab-1.svg"
+                  alt="tab-one"
+                />
+              </div>
+              <!-- image box End -->
+              <!-- tab text box -->
+              <div class="px-5 py-12 md:max-w-lg md:[&>*]:mt-6">
+                <!-- header text  -->
+                <h1
+                  class="font-semibold text-xl text-center text-gray-700 md:text-4xl md:text-left"
+                >
+                  Bookmark in one click
+                </h1>
+                <!-- header text End -->
+                <p
+                  class="text-center pt-4 text-gray-500 text-sm md:text-lg md:text-left"
+                >
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Doloremque ex sequi distinctio culpa eligendi excepturi ullam
+                  possimus impedit.
+                </p>
+
+                <button class="hidden md:inline-block btn-blue btn-blue-hover">
+                  More info
+                </button>
+              </div>
+              <!-- tab text box End -->
+              <!-- pill svg -->
+              <div
+                class="absolute bottom-56 -left-20 w-full h-44 bg-[#5569d8] rounded-full -z-10 md:h-80 md:-left-[50rem] md:top-32"
+              ></div>
+              <!-- pill svg End -->
+            </div>
+            <!-- tab slides End -->
+          </div>
+          <!-- tab container End -->
+        </div>
+        <!-- container End -->
+      </section>
+    </div>
+    <!-- page End -->
   </body>
 </html>

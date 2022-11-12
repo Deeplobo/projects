@@ -7,16 +7,49 @@
   html {
     font-family: "Rubik", sans-serif;
   }
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 }
 @layer components {
-  .btn {
+  /* buttons section  */
+  .btn-red {
     padding: 7px 17px;
     background-color: hsl(0, 94%, 66%);
     color: aliceblue;
     border-radius: 5px;
+    border: 2px solid transparent;
+    transition: 0.3s linear;
   }
+  .btn-blue {
+    padding: 7px 17px;
+    background-color: #5368df;
+    color: aliceblue;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    transition: 0.3s linear;
+  }
+  .btn-blue-hover:hover {
+    background-color: transparent;
+    border: 2px solid #5368df;
+    color: #5368df;
+  }
+  .btn-red-hover:hover {
+    background-color: transparent;
+    border: 2px solid hsl(0, 94%, 66%);
+    color: hsl(0, 94%, 66%);
+  }
+  /* buttons section  End*/
   .glass {
     background-color: rgba(255, 255, 255, 0.263);
     backdrop-filter: blur(15px);
   }
+  /* under line style  */
+  .underl-red {
+    padding-bottom: 1rem;
+    box-shadow: 0 3px 0 0 red;
+  }
+  /* under line style End */
 }
