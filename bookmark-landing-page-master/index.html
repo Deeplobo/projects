@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Bookmark landing page</title>
+    <link rel="stylesheet" href="css/output.css" />
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 46%, 43%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- page  -->
+    <div class="">
+      <!-- nav bar -->
+      <nav class="h-24 md:h-16 glass fixed w-full z-20">
+        <!-- Desktop nav container -->
+        <div class="flex items-center justify-evenly h-full">
+          <!-- logo section  -->
+          <div class="w-1/2">
+            <img class="sm:pl-44 pl-5" src="images/logo-bookmark.svg" alt="" />
+          </div>
+          <!-- logo section End -->
+          <!-- nav links -->
+          <div class="sm:w-1/2 w-40">
+            <ul
+              class="hidden sm:flex items-center justify-evenly pr-[11%] [&>li]:font-medium [&>li]:tracking-widest text-gray-500 text-[14px]"
+            >
+              <li><a class="hover:text-red-500" href="">FEATURE</a></li>
+              <li><a class="hover:text-red-500" href="">PRICING</a></li>
+              <li><a class="hover:text-red-500" href="">CONTACT</a></li>
+              <li class="btn-red btn-red-hover"><a href="">LOGIN</a></li>
+            </ul>
+            <img
+              class="sm:hidden pl-[70%]"
+              src="images/icon-hamburger.svg"
+              alt=""
+            />
+          </div>
+          <!-- nav links End -->
+        </div>
+        <!-- mobile nav container -->
+        <div
+          class="sm:hidden fixed top-0 right-0 overflow-hidden z-10 bg-white h-screen w-0"
+        >
+          <img class="sm:hidden py-4" src="images/icon-hamburger.svg" alt="" />
+          <ul class="[&>li]:pl-2 [&>li]:pr-8 [&>li]:pt-4">
+            <li><a href="">FEATURE</a></li>
+            <li><a href="">PRICING</a></li>
+            <li><a href="">CONTACT</a></li>
+            <li class="btn-red btn-red-hover">LOGIN</li>
+          </ul>
+        </div>
+        <!-- mobile nav container end -->
+      </nav>
+      <!-- nav bar End -->
+      <!-- hero section  -->
+      <section class="w-auto grid place-items-center pt-36">
+        <!--  container  -->
+        <div
+          class="relative sm:w-full flex flex-col-reverse sm:flex-row  sm:justify-center overflow-hidden 2xl:w-auto"
+        >
+          <!-- text container  -->
+          <div class="sm:w-2/5 sm:pl-10 md:pr-0 px-4 pt-5 ">
+            <!-- header text  -->
+            <h1 class="sm:text-5xl text-2xl font-semibold text-gray-700 md:pt-8">
+              <span class="text-8xl font-light">A</span> Simple Bookmark Manager
+            </h1>
+            <!-- header text End -->
+            <!-- paragraph text  -->
+            <p class="sm:text-[.9rem] text-sm text-gray-600 py-4 md:pt-10">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil
+              eaque, aut in hic consectetur tempora dolore suscipit accusantium
+            </p>
+            <!-- paragraph text End -->
+            <!-- buttons  -->
+            <div class="flex sm:[&>*]:text-[.9rem] [&>*]:text-[11px]">
+              <button class="btn-blue btn-blue-hover mr-6">
+                get it on chrome
+              </button>
+              <button class="btn-blue btn-blue-hover">get it on firefox</button>
+            </div>
+            <!-- buttons End -->
+          </div>
+          <!-- text container  End-->
+          <div class="sm:w-1/2">
+            <img src="images/illustration-hero.svg" alt="" />
+          </div>
+          <!-- svg button  -->
+          <div id="hero-pill"
+            class="absolute md:bottom-0 bottom-72 -right-20 md:-right-[163px] bg-[#5368df] sm:h-[20rem] h-[30%] sm:w-1/2 w-full rounded-full -z-10"
+          ></div>
+          <!-- svg button  -->
+        </div>
+        <!--  container  End -->
+      </section>
+      <!-- hero section End -->
+
+      <!-- features section  -->
+      <section class="w-auto">
+        <!-- container  -->
+        <div class="pt-20">
+          <!-- header text  -->
+          <div class="text-center">
+            <h5 class="text-xl sm:text-3xl font-semibold text-gray-700 pb-3">
+              Features
+            </h5>
+            <p
+              class="text-sm sm:text-[.9rem] px-4 text-gray-700 sm:max-w-[35rem] sm:mx-auto"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+              optio id laudantium dolores nemo ducimus vitae, ipsam qui
+              molestiae rem
+            </p>
+          </div>
+          <!-- header text End -->
+          <!-- tab container  -->
+          <div class="2xl:flex 2xl:flex-col 2xl:items-center">
+            <!-- tab links need more to think -->
+            <div
+              class="text-center p-5 [&>*]:py-4 sm:[&>*]:px-16 [&>*]:transition-all duration-200 sm:flex sm:justify-center sm:pt-16 divide-y-2 divide-solid md:divide-y-0"
+            >
+              <h6
+                class="hover:text-red-500 underl-red"
+              >
+                <a  href=""> Speedy Search </a>
+              </h6>
+              <h6 class=" hover:text-red-500">
+                <a href=""> Simple Bookmark</a>
+              </h6>
+              <h6 class="hover:text-red-500">
+                <a href=""> Easy Sharing</a>
+              </h6>
+            </div>
+            <!-- tab links End -->
+            <!-- tab slides -->
+            <div class="relative md:overflow-hidden md:flex md:justify-center md:min-w-[78rem] 2xl:w-[78rem]">
+              <!-- sliding content  -->
+              <div class="flex md:relative overflow-hidden ">
+            <!-- tab 1  -->
+            <div class="min-w-[20rem] md:flex md:items-center md:justify-evenly md:py-8 md:min-w-[78rem]">
+
+              <!-- image box -->
+              <div class="px-6 py-8">
+                <img
+                  src="images/illustration-features-tab-1.svg"
+                  alt="tab-one"
+                />
+              </div>
+              <!-- image box End -->
+              <!-- tab text box -->
+              <div class="px-5 py-12 md:max-w-lg md:[&>*]:mt-6">
+                <!-- header text  -->
+                <h1
+                  class="font-semibold text-xl text-center text-gray-700 md:text-3xl md:text-left"
+                >
+                  Bookmark in one click
+                </h1>
+                <!-- header text End -->
+                <p
+                  class="text-center pt-4 text-gray-500 text-sm md:text-[.9rem] md:text-left"
+                >
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Doloremque ex sequi distinctio culpa eligendi excepturi ullam
+                  possimus impedit.
+                </p>
+
+                <button class="hidden md:inline-block btn-blue btn-blue-hover">
+                  More info
+                </button>
+              </div>
+              <!-- tab text box End -->
+            </div>
+            <!-- tab 1 End-->
+            <!-- tab 2  -->
+            <div class="min-w-[20rem] md:flex md:items-center md:justify-evenly md:py-8 md:min-w-[78rem]">
+
+              <!-- image box -->
+              <div class="px-6 py-8">
+                <img
+                  src="images/illustration-features-tab-2.svg"
+                  alt="tab-one"
+                />
+              </div>
+              <!-- image box End -->
+              <!-- tab text box -->
+              <div class="px-5 md:max-w-lg md:[&>*]:mt-6">
+                <!-- header text  -->
+                <h1
+                  class="font-semibold text-xl text-center text-gray-700 md:text-3xl md:text-left"
+                >
+                  Bookmark in one click
+                </h1>
+                <!-- header text End -->
+                <p
+                  class="text-center pt-4 text-gray-500 text-sm md:text-[.9rem] md:text-left"
+                >
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Doloremque ex sequi distinctio culpa eligendi excepturi ullam
+                  possimus impedit.
+                </p>
+
+                <button class="hidden md:inline-block btn-blue btn-blue-hover">
+                  More info
+                </button>
+              </div>
+              <!-- tab text box End -->
+            </div>
+            <!-- tab 2 End-->
+            <!-- tab 3  -->
+            <div class="min-w-[20rem] md:flex md:items-center md:justify-evenly md:py-8 md:min-w-[78rem]">
+
+              <!-- image box -->
+              <div class="px-6 py-8">
+                <img
+                  src="images/illustration-features-tab-3.svg"
+                  alt="tab-one"
+                />
+              </div>
+              <!-- image box End -->
+              <!-- tab text box -->
+              <div class="px-5 md:max-w-lg md:[&>*]:mt-6">
+                <!-- header text  -->
+                <h1
+                  class="font-semibold text-xl text-center text-gray-700 md:text-3xl md:text-left"
+                >
+                  Bookmark in one click
+                </h1>
+                <!-- header text End -->
+                <p
+                  class="text-center pt-4 text-gray-500 text-sm md:text-[.9rem] md:text-left"
+                >
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Doloremque ex sequi distinctio culpa eligendi excepturi ullam
+                  possimus impedit.
+                </p>
+
+                <button class="hidden md:inline-block btn-blue btn-blue-hover">
+                  More info
+                </button>
+              </div>
+              <!-- tab text box End -->
+            </div>
+            <!-- tab 3 End-->
+            </div>
+            <!-- sliding content End -->
+            <!-- pill svg -->
+                   <div id="feature-pill"
+                   class="absolute bottom-52 -left-20 w-full h-44 bg-[#5569d8] rounded-full -z-10 md:h-80 md:-left-[45rem] md:top-40 2xl:w-[50rem] 2xl:-left-80 ">
+            </div>
+            <!-- pill svg End -->
+            </div>
+          <!-- tab slides End -->
+        </div>
+          <!-- tab container End -->
+        </div>
+        <!-- container End -->
+      </section>
+      <!-- features section  -->
+
+      <!-- Extention section  -->
+      <section class=" w-auto pt-12 md:pt-32">
+        <!-- container  -->
+        <div class="">
+          <!-- heading text  -->
+          <div>
+            <h1 class="text-xl font-semibold text-center text-gray-700 md:text-3xl">
+              Download the Extention
+            </h1>
+            <p class="text-sm text-gray-500 text-center p-4 md:max-w-lg md:text-[.9rem] md:mx-auto">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium, cum illo vel voluptas ratione, expedita!
+            </p>
+          </div>
+          <!-- heading text End  -->
+          <!-- Extention wrapper section  -->
+          <div>
+           <!-- Wrapper  -->
+            <div class="[&>*]:my-10 md:flex md:min-h-[30rem] justify-center">
+               <!-- extention 1 -->
+              <div class=" max-w-[16rem] mx-auto flex flex-col items-center shadow-xl py-6 rounded-2xl md:h-80 md:mx-3 md:self-start">
+                <img class="pb-6" src="images/logo-chrome.svg" alt="chrome" />
+                <h5 class="font-semibold text-[1.2rem] text-gray-600">Add to Chrome</h5>
+                <p class="text-sm text-gray-500">Minimum version 62</p>
+              <hr class="hr-dotted" />
+              <!-- logo and title  -->
+              <button class="btn-blue btn-blue-hover">Add & Install Extention</button>
+            </div>
+            <!-- extention 1 end-->
+            <!-- extention 2 -->
+            <div class=" max-w-[16rem] mx-auto flex flex-col items-center shadow-xl py-6 rounded-2xl md:h-80 md:mx-3 md:self-center">
+              <img class="pb-6" src="images/logo-firefox.svg" alt="chrome" />
+              <h5 class="font-semibold text-[1.2rem] text-gray-600">Add to Firefox</h5>
+              <p class="text-sm text-gray-500">Minimum version 55</p>
+            <hr class="hr-dotted" />
+            <!-- logo and title  -->
+            <button class="btn-blue btn-blue-hover">Add & Install Extention</button>
+          </div>
+            <!-- extention 2 end-->
+            <!-- extention 3 -->
+            <div class=" max-w-[16rem] mx-auto flex flex-col items-center shadow-xl py-6 rounded-2xl md:h-80 md:mx-3 md:self-end">
+              <img class="pb-6" src="images/logo-opera.svg" alt="chrome" />
+              <h5 class="font-semibold text-[1.2rem] text-gray-600">Add to Opera</h5>
+              <p class="text-sm text-gray-500">Minimum version 46</p>
+            <hr class="hr-dotted" />
+            <!-- logo and title  -->
+            <button class="btn-blue btn-blue-hover">Add & Install Extention</button>
+          </div>
+            <!-- extention 3 end-->
+          </div>
+          <!-- Extention wrapper section End -->
+        </div>
+        <!-- container End -->
+      </section>
+      <!-- Extention section End -->
+
+      <!-- Q and A section  -->
+      <section class="py-11">
+        <!-- wrapper  -->
+        <div class="flex flex-col items-center">
+          <!-- header text -->
+          <div >
+            <h1 class="text-xl text-center text-gray-600 font-semibold md:text-3xl ">Frequenly Asked Question</h1>
+            <p class="text-sm text-center text-gray-500 p-4 md:max-w-sm md:text-[.9rem] md:mx-auto">Lorem ipsum dolor sit cupiditate ab ea corporis deserunt iure nemo, perferendis itaque voluptatum molestiae. Eum, nihil.</p>
+          </div>
+          <!-- header text End-->
+          <!-- qna container  -->
+          <div class="divide-y-2 px-6 my-8 md:max-w-lg">
+            <!-- qna #1  -->
+            <div class="px-1">
+              <!-- q wrapper  -->
+              <div class="flex h-14 items-center justify-between">
+             <h1 class="text-sm "> What is your Name?</h1>
+             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="10"><path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"/></svg>
+             </div>
+              <!-- q wrapper  End-->
+              <!-- answer wrapper  -->
+              <p class="text-sm  h-0 overflow-hidden">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum harum unde tempora quae obcaecati, aliquid minima molestiae illo ullam velit ea fugiat delectus excepturi saepe earum at adipisci dolore perferesmndis.</p>
+              <!-- answer wrapper End -->
+            </div>
+            <!-- qna #1 End -->
+            <!-- qna #2  -->
+            <div class="px-1">
+              <!-- q wrapper  -->
+              <div class="flex h-14 items-center justify-between">
+             <h1 class="text-sm "> What is your Name?</h1>
+             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="10"><path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"/></svg>
+             </div>
+              <!-- q wrapper  End-->
+              <!-- answer wrapper  -->
+              <p class="text-sm  h-0 overflow-hidden">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum harum unde tempora quae obcaecati, aliquid minima molestiae illo ullam velit ea fugiat delectus excepturi saepe earum at adipisci dolore perferesmndis.</p>
+              <!-- answer wrapper End -->
+            </div>
+            <!-- qna #2 End -->
+            <!-- qna #3  -->
+            <div class="px-1">
+              <!-- q wrapper  -->
+              <div class="flex h-14 items-center justify-between">
+             <h1 class="text-sm "> What is your Name?</h1>
+             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="10"><path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"/></svg>
+             </div>
+              <!-- q wrapper  End-->
+              <!-- answer wrapper  -->
+              <p class="text-sm  h-0 overflow-hidden">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum harum unde tempora quae obcaecati, aliquid minima molestiae illo ullam velit ea fugiat delectus excepturi saepe earum at adipisci dolore perferesmndis.</p>
+              <!-- answer wrapper End -->
+            </div>
+            <!-- qna #3 End -->
+            <!-- qna #4  -->
+            <div class="px-1">
+              <!-- q wrapper  -->
+              <div class="flex h-14 items-center justify-between">
+             <h1 class="text-sm "> What is your Name?</h1>
+             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="10"><path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"/></svg>
+             </div>
+              <!-- q wrapper  End-->
+              <!-- answer wrapper  -->
+              <p class="text-sm  h-0 overflow-hidden">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum harum unde tempora quae obcaecati, aliquid minima molestiae illo ullam velit ea fugiat delectus excepturi saepe earum at adipisci dolore perferesmndis.</p>
+              <!-- answer wrapper End -->
+            </div>
+            <!-- qna #4 End -->
+          </div>
+          <!-- qna container End -->
+          <button class="btn-blue btn-blue-hover">More info</button>
+        </div>
+        <!-- wrapper End -->
+      </section>
+      <!-- Q and A section End -->
+      <!-- contact section  -->
+      <section class="">
+        <!-- container  -->
+        <div class="bg-[#5368df] py-8">
+        <!-- headig text  -->
+        <div class="py-8">
+          <h6 class="text-center text text-white text-[.6rem] tracking-[.19rem] " >30,0000+ <span>ALREADY CONNECTED</span></h6>
+          <h3 class="text-lg text-white font-semibold text-center md:text-3xl md:pt-4">Stay Up-To-Date <br> With Us</h3>
+        </div>
+        <!-- headig text End -->
+        <!-- contact us form wrapper -->
+         <div class="px-6 flex justify-center">
+          <form action="">
+            <label for="email" class="text-white font-medium">Email</label><br>
+            <input type="email" class="w-full rounded-md border-2 border-gray-100 mb-4"> <br>
+            <label for="massage" class="text-white font-medium"> Write to Us</label><br>
+            <textarea name="massage" id="text" class="w-full rounded-md border-2 border-white mb-4"></textarea><br>
+            <button class="btn-red btn-red-hover">Submit</button>
+          </form>
+         </div>
+        <!-- contact us form wrapper end -->
+        </div>
+        <!-- container  -->
+      </section>
+      <!-- contact section End -->
+      <!-- footer section  -->
+      <footer >
+        <!-- wrapper  -->
+        <div class="bg-[#242946] py-8 md:flex md:items-center md:py-0">
+          <!-- left-content  -->
+          <div class="flex justify-center flex-col px-20 py-6 md:w-1/2 md:flex-row md:items-center md:justify-center md:p-4 md:gap-14">
+            <!-- logo image  -->
+            <svg width="148" height="25" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M37 6.299h5.227c.746 0 1.434.155 2.062.466.629.311 1.123.735 1.484 1.27s.542 1.12.542 1.754c0 .672-.165 1.254-.495 1.746-.33.491-.762.868-1.297 1.129v.15c.697.248 1.25.643 1.661 1.185.41.541.616 1.191.616 1.95 0 .735-.196 1.385-.588 1.951a3.817 3.817 0 0 1-1.587 1.307c-.665.305-1.403.457-2.212.457H37V6.299zm5.04 5.45c.548 0 .986-.152 1.316-.457.33-.305.495-.688.495-1.148 0-.448-.159-.824-.476-1.13-.318-.304-.738-.457-1.26-.457H39.52v3.192h2.52zm.28 5.619c.61 0 1.086-.159 1.428-.476.342-.317.513-.731.513-1.241 0-.51-.174-.927-.522-1.251-.349-.324-.847-.485-1.494-.485H39.52v3.453h2.8zm12.927 2.595c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.511-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.915-3.528a6.711 6.711 0 0 1 2.51-2.529C52.756 6.308 53.94 6 55.248 6c1.306 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.915 3.528a6.711 6.711 0 0 1-2.51 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.258-.578 4.177 4.177 0 0 0 1.615-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.615-1.624 4.52 4.52 0 0 0-2.258-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.605 1.624 4.47 4.47 0 0 0 2.25.578zm15.353 2.39c-1.307 0-2.492-.308-3.556-.924a6.711 6.711 0 0 1-2.51-2.53c-.61-1.07-.915-2.246-.915-3.528 0-1.281.305-2.457.914-3.528a6.711 6.711 0 0 1 2.511-2.529C68.108 6.308 69.294 6 70.6 6c1.307 0 2.492.308 3.556.924a6.711 6.711 0 0 1 2.51 2.53c.61 1.07.915 2.246.915 3.527 0 1.282-.305 2.458-.914 3.528a6.711 6.711 0 0 1-2.511 2.53c-1.064.616-2.25.924-3.556.924zm0-2.39a4.52 4.52 0 0 0 2.259-.578 4.177 4.177 0 0 0 1.614-1.624c.392-.697.588-1.494.588-2.39 0-.896-.196-1.692-.588-2.389a4.177 4.177 0 0 0-1.614-1.624 4.52 4.52 0 0 0-2.259-.579 4.47 4.47 0 0 0-2.25.579 4.195 4.195 0 0 0-1.605 1.624c-.392.697-.588 1.493-.588 2.39 0 .895.196 1.692.588 2.389a4.195 4.195 0 0 0 1.606 1.624 4.47 4.47 0 0 0 2.249.578zM79.83 6.3h2.52v5.73h.15l4.89-5.73h3.043v.149L85.6 11.973l5.338 7.542v.149h-3.08l-3.994-5.693-1.512 1.773v3.92h-2.52V6.299zM93.779 6h3.248l3.546 9.39h.15L104.268 6h3.267v13.365h-2.501v-6.589l.15-2.221h-.15l-3.398 8.81h-1.96l-3.416-8.81h-.149l.15 2.221v6.59h-2.483V6zm20.8 0h2.894l5.021 13.365h-2.781l-1.12-3.192h-5.115l-1.12 3.192h-2.781L114.579 6zm3.193 7.859l-1.176-3.36-.486-1.606h-.149l-.485 1.606-1.195 3.36h3.49zM124.553 6h4.872c.871 0 1.646.18 2.324.541.678.361 1.204.862 1.577 1.503.374.64.56 1.366.56 2.175 0 .858-.27 1.62-.812 2.286a4.617 4.617 0 0 1-2.044 1.447l-.018.13 3.584 5.134v.15h-2.894l-3.453-5.022h-1.176v5.021h-2.52V6zm4.853 6.03c.573 0 1.04-.175 1.4-.523.361-.349.542-.79.542-1.326 0-.51-.172-.945-.514-1.306-.342-.361-.806-.542-1.39-.542h-2.371v3.696h2.333zm7.23-6.03h2.52v5.73h.15l4.89-5.73h3.043v.15l-4.835 5.525 5.34 7.541v.15h-3.08l-3.996-5.694-1.512 1.773v3.92h-2.52V6z" fill="#ffffff" fill-rule="nonzero"/><g><circle fill="#5267DF" cx="12.5" cy="12.5" r="12.5"/><path d="M9 9v10l3.54-3.44L16.078 19V9a2 2 0 0 0-2-2H11a2 2 0 0 0-2 2z" fill="#FFF"/></g></g></svg>
+            <!-- logo image End -->
+            <!-- link  -->
+            <ul class="text-white font-medium [&>*]:py-4 [&>*]:text-center w-50% pt-5 md:flex md:gap-6 md:pt-0 md:tracking-widest ">
+              <li><a class="hover:text-red-500 transition duration-300" href="">Features</a></li>
+              <li><a class="hover:text-red-500 transition duration-300" href="">Pricing</a></li>
+              <li><a class="hover:text-red-500 transition duration-300" href=""> Contact</a></li>
+            </ul>
+            <!-- link  -->
+          </div>
+          <!-- left-content  End-->
+          <!-- right content  -->
+          <div class="md:w-1/2">
+            <!-- icon container  -->
+            <div class="flex justify-center md:justify-end md:pr-48 gap-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path class="hover:fill-red-300" fill="#FFF" fill-rule="evenodd" d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"><path class="hover:fill-red-300" fill="#FFF" fill-rule="evenodd" d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557z"/></svg>
+            </div>
+            <!-- icon container End -->
+          </div>
+          <!-- right content  End-->
+        </div>
+        <!-- wrapper End -->
+      </footer>
+      <!-- footer section  -->
+    </div>
+    <!-- page End -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="/js/animation.js"></script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap");
+
+@layer base {
+  html {
+    font-family: "Rubik", sans-serif;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+@layer components {
+  /* buttons section  */
+  .btn-red {
+    padding: 7px 17px;
+    background-color: hsl(0, 94%, 66%);
+    color: aliceblue;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    transition: 0.3s linear;
+  }
+  .btn-blue {
+    padding: 7px 17px;
+    background-color: #5368df;
+    color: aliceblue;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    transition: 0.3s linear;
+  }
+  .btn-blue-hover:hover {
+    background-color: transparent;
+    border: 2px solid #5368df;
+    color: #5368df;
+  }
+  .btn-red-hover:hover {
+    background-color: white;
+    border: 2px solid hsl(0, 94%, 66%);
+    color: hsl(0, 94%, 66%);
+  }
+  /* buttons section  End*/
+  .glass {
+    background-color: rgba(255, 255, 255, 0.263);
+    backdrop-filter: blur(15px);
+  }
+  /* under line style  */
+  .underl-red {
+    padding-bottom: 1rem;
+    box-shadow: 0 3px 0 0 red;
+  }
+  /* under line style End */
+  /* hr dotted style  */
+  .hr-dotted {
+    height: 60px;
+    width: 100%;
+    overflow: hidden;
+    border: none;
+  }
+  .hr-dotted::after {
+    content: "..........................";
+    letter-spacing: 6px;
+    font-size: 1.7rem;
+    font-weight: 500;
+    opacity: 0.2;
+  }
+  /* hr dotted style End */
+}
