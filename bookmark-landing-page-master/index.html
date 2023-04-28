@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -102,9 +102,11 @@
           <div class="sm:w-1/2">
             <img src="images/illustration-hero.svg" alt="" />
           </div>
-          <div
-            class="absolute md:bottom-0 bottom-72 -right-20 md:-right-44 bg-[#5368df] sm:h-[20rem] h-[30%] sm:w-1/2 w-full rounded-full -z-10"
+          <!-- svg button  -->
+          <div id="hero-pill"
+            class="absolute md:bottom-0 bottom-72 -right-20 md:-right-[163px] bg-[#5368df] sm:h-[20rem] h-[30%] sm:w-1/2 w-full rounded-full -z-10"
           ></div>
+          <!-- svg button  -->
         </div>
         <!--  container  End -->
       </section>
@@ -148,9 +150,9 @@
             </div>
             <!-- tab links End -->
             <!-- tab slides -->
-            <div class="relative md:overflow-hidden md:flex md:justify-center md:min-w-[78rem]">
+            <div class="relative md:overflow-hidden md:flex md:justify-center md:min-w-[78rem] 2xl:w-[78rem]">
               <!-- sliding content  -->
-              <div class="flex md:relative overflow-hidden md:w-[79rem] xl:w-96 ">
+              <div class="flex md:relative overflow-hidden ">
             <!-- tab 1  -->
             <div class="min-w-[20rem] md:flex md:items-center md:justify-evenly md:py-8 md:min-w-[78rem]">
 
@@ -187,7 +189,7 @@
             </div>
             <!-- tab 1 End-->
             <!-- tab 2  -->
-            <div class="min-w-[20rem] md:flex md:items-center md:justify-evenly md:py-8 md:min-w-[79rem]">
+            <div class="min-w-[20rem] md:flex md:items-center md:justify-evenly md:py-8 md:min-w-[78rem]">
 
               <!-- image box -->
               <div class="px-6 py-8">
@@ -259,7 +261,7 @@
             </div>
             <!-- sliding content End -->
             <!-- pill svg -->
-                   <div
+                   <div id="feature-pill"
                    class="absolute bottom-52 -left-20 w-full h-44 bg-[#5569d8] rounded-full -z-10 md:h-80 md:-left-[45rem] md:top-40 2xl:w-[50rem] 2xl:-left-80 ">
             </div>
             <!-- pill svg End -->
@@ -458,5 +460,7 @@
       <!-- footer section  -->
     </div>
     <!-- page End -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="/js/animation.js"></script>
   </body>
 </html>
